@@ -11,7 +11,7 @@
     
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dcbde81dc9","applicationID":"77525617","transactionName":"IlsMTEJWDl4ERBZIEwNYC1sfSgpdFg==","queueTime":1,"applicationTime":627,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"dcbde81dc9","applicationID":"77525617","transactionName":"IlsMTEJWDl4ERBZIEwNYC1sfSgpdFg==","queueTime":2,"applicationTime":796,"agent":""}</script>
 <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQAAUVBXChAHU1RQAgcGUQ=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
 <meta src='version-1505171321' data-turbolinks-track />
 <script type='text/javascript'>
@@ -32,7 +32,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
   
 
 
-<title>caralyn farrell | design, branding, marketing - Pharos Hospitality</title>
+<title>caralyn farrell | design, branding, marketing - Atlanta Moon Ride</title>
 <link href='https://format-com-cld-res.cloudinary.com/image/upload/s--FEKF_NOx--/c_limit,g_center,h_16,w_16/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.ico' rel='shortcut icon' type="image/x-icon"/>
 
 <link href='https://format-com-cld-res.cloudinary.com/image/upload/s--c4homh0G--/c_limit,g_center,h_16,w_16/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png' rel='icon' sizes="16x16" />
@@ -50,19 +50,19 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
 <meta content="caralyn farrell, graphic design, web design, marketing, branding, identity, web development, burnett group, designer" name='keywords' />
 
 <meta property="og:site_name" content="caralyn farrell | design, branding, marketing"/>
-<meta property="og:title" content="caralyn farrell | design, branding, marketing - Pharos Hospitality"/>
+<meta property="og:title" content="caralyn farrell | design, branding, marketing - Atlanta Moon Ride"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="http://www.caralynfarrell.com//3257858-pharos-hospitality"/>
-<meta property="og:image" content="https://format-com-cld-res.cloudinary.com/image/private/s--Xo7exoTF--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png"/>
+<meta property="og:url" content="http://www.caralynfarrell.com//atlanta-moon-ride.html"/>
+<meta property="og:image" content="https://format-com-cld-res.cloudinary.com/image/private/s--nl5ihfi3--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg"/>
   
-  <meta property="og:image:width" content="960" />
-  <meta property="og:image:height" content="506" />
+  <meta property="og:image:width" content="612" />
+  <meta property="og:image:height" content="468" />
   
 
 <meta name="og:description" content="caralyn farrell | design, branding, marketing and typography.">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="caralyn farrell | design, branding, marketing - Pharos Hospitality">
+<meta name="twitter:title" content="caralyn farrell | design, branding, marketing - Atlanta Moon Ride">
 <meta name="twitter:description" content="caralyn farrell | design, branding, marketing and typography.">
 
 <link href='https://static0.format.com/static/theme_api/v2/unauthorized-f018eb294ecd29b7d90e2aa06460bca37152ebdc3156d604611509e1b67ace24.css' media='screen' rel='stylesheet' type='text/css' />
@@ -153,7 +153,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
     <script src="https://static1.format.com/static/theme_api/vendor/lazysizes-1.3.2.min-c9d9288562fa809a0e70ea07c97f94642363f7603f985d5fa2cd6c587ee0bf15.js"></script>
     <script src="http://bucket2.format-assets.com/theme_versions/2378306/assets/javascripts/theme.js"></script>
 </head>
-<body class="page-3257858 content content_page preload">
+<body class="page-3257544 content content_page preload">
   <script type="text/javascript">
     window.lazySizesConfig = window.lazySizesConfig || {};
     window.lazySizesConfig.expand = 720;
@@ -179,7 +179,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
     <div class="error-message">
       <h3>Something went wrong.</h3>
       <p>We've been notified of this error.</p>
-      <p>Need help? Check out our <a href="3257858-pharos-hospitality#">Help Centre</a>.</p>
+      <p>Need help? Check out our <a href="atlanta-moon-ride.html#">Help Centre</a>.</p>
       <button class="hide-loading-overlay">Back</button>
     </div>
   </div>
@@ -221,77 +221,77 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         
         
                 <li class="category selected">
-                    <a href="3257858-pharos-hospitality#" data-no-turbolink="true" class="category-name">work</a>
+                    <a href="atlanta-moon-ride.html#" data-no-turbolink="true" class="category-name">work</a>
                     <ul>
                         
                             <li class="item">
-                                <a href="3257410-american-culinary-federation">
+                                <a href="american-culinary-federation.html">
                                     American Culinary Federation
                                 </a>
                             </li>
                         
-                            <li class="item">
-                                <a href="3257544-atlanta-moon-ride">
+                            <li class="item selected">
+                                <a href="atlanta-moon-ride.html">
                                     Atlanta Moon Ride
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3257570-capital-group">
+                                <a href="capital-group.html">
                                     Capital Group
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3257668-chamber-fitness">
+                                <a href="chamber-fitness.html">
                                     Chamber Fitness
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3257737-g_farrell-consulting">
+                                <a href="g_farrell-consulting.html">
                                     G_Farrell Consulting
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3259953-intermarket">
+                                <a href="intermarket.html">
                                     Intermarket
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3257764-keefe-bruyette-woods">
+                                <a href="keefe-bruyette-woods.html">
                                     Keefe Bruyette & Woods
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3257786-mill-basin-kosher-delicatessen">
+                                <a href="mill-basin-kosher-delicatessen.html">
                                     Mill Basin Kosher Delicatessen
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3257258-terra-capital-partners">
+                                <a href="terra-capital-partners.html">
                                     Terra Capital Partners
                                 </a>
                             </li>
                         
-                            <li class="item selected">
-                                <a href="3257858-pharos-hospitality">
+                            <li class="item">
+                                <a href="pharos-hospitality.html">
                                     Pharos Hospitality
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3257873-ver">
+                                <a href="ver.html">
                                     VER
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3257886-35mm-magazine">
+                                <a href="35mm-magazine.html">
                                     35mm Magazine
                                 </a>
                             </li>
@@ -302,17 +302,17 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         
         
                 <li class="category">
-                    <a href="3257858-pharos-hospitality#" data-no-turbolink="true" class="category-name">photography</a>
+                    <a href="atlanta-moon-ride.html#" data-no-turbolink="true" class="category-name">photography</a>
                     <ul>
                         
                             <li class="item">
-                                <a href="3066101-film">
+                                <a href="film.html">
                                     Film
                                 </a>
                             </li>
                         
                             <li class="item">
-                                <a href="3066414-digital">
+                                <a href="digital.html">
                                     Digital
                                 </a>
                             </li>
@@ -328,9 +328,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         
         
         
-                <li class="item">
-                    <a href="contact.html" >contact</a>
-                </li>
+
         
         
     </ul>
@@ -359,77 +357,77 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
             
             
                     <li class="category selected">
-                        <a href="3257858-pharos-hospitality#" data-no-turbolink="true" class="category-name">work</a>
+                        <a href="atlanta-moon-ride.html#" data-no-turbolink="true" class="category-name">work</a>
                         <ul>
                             
                                 <li class="item">
-                                    <a href="3257410-american-culinary-federation">
+                                    <a href="american-culinary-federation.html">
                                         American Culinary Federation
                                     </a>
                                 </li>
                             
-                                <li class="item">
-                                    <a href="3257544-atlanta-moon-ride">
+                                <li class="item selected">
+                                    <a href="atlanta-moon-ride.html">
                                         Atlanta Moon Ride
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3257570-capital-group">
+                                    <a href="capital-group.html">
                                         Capital Group
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3257668-chamber-fitness">
+                                    <a href="chamber-fitness.html">
                                         Chamber Fitness
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3257737-g_farrell-consulting">
+                                    <a href="g_farrell-consulting.html">
                                         G_Farrell Consulting
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3259953-intermarket">
+                                    <a href="intermarket.html">
                                         Intermarket
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3257764-keefe-bruyette-woods">
+                                    <a href="keefe-bruyette-woods.html">
                                         Keefe Bruyette & Woods
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3257786-mill-basin-kosher-delicatessen">
+                                    <a href="mill-basin-kosher-delicatessen.html">
                                         Mill Basin Kosher Delicatessen
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3257258-terra-capital-partners">
+                                    <a href="terra-capital-partners.html">
                                         Terra Capital Partners
                                     </a>
                                 </li>
                             
-                                <li class="item selected">
-                                    <a href="3257858-pharos-hospitality">
+                                <li class="item">
+                                    <a href="pharos-hospitality.html">
                                         Pharos Hospitality
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3257873-ver">
+                                    <a href="ver.html">
                                         VER
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3257886-35mm-magazine">
+                                    <a href="35mm-magazine.html">
                                         35mm Magazine
                                     </a>
                                 </li>
@@ -440,17 +438,17 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
             
             
                     <li class="category">
-                        <a href="3257858-pharos-hospitality#" data-no-turbolink="true" class="category-name">photography</a>
+                        <a href="atlanta-moon-ride.html#" data-no-turbolink="true" class="category-name">photography</a>
                         <ul>
                             
                                 <li class="item">
-                                    <a href="3066101-film">
+                                    <a href="film.html">
                                         Film
                                     </a>
                                 </li>
                             
                                 <li class="item">
-                                    <a href="3066414-digital">
+                                    <a href="digital.html">
                                         Digital
                                     </a>
                                 </li>
@@ -466,9 +464,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
             
             
             
-                    <li class="item">
-                        <a href="contact.html">contact</a>
-                    </li>
+
             
             
         </ul>
@@ -499,7 +495,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         
     
     
-        <a href="3257858-pharos-hospitality#" id="share_4ormat_link" class="social-share" title="Share" data-direction="top">
+        <a href="atlanta-moon-ride.html#" id="share_4ormat_link" class="social-share" title="Share" data-direction="top">
             Share
         </a>
     
@@ -532,11 +528,11 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           
           
           
-            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_headline_01" data-content-module-id="1761854" data-content-module-template-id="6" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_headline_01" data-content-module-id="1761438" data-content-module-template-id="6" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
   <div class="twelvecol">
-    <div class="  align_left" data-editable-type="title" id="title_1" data-force-html-mode="false" data-id="28550005" data-content-module-unique-id="">
+    <div class="  align_left" data-editable-type="title" id="title_1" data-force-html-mode="false" data-id="28546013" data-content-module-unique-id="">
 
-   <h2 class="xl-headline">Pharos Hospitality</h2>  
+         <h2 class="xl-headline">Atlanta Moon Ride</h2>      
 </div>
   </div>
 </div>
@@ -550,17 +546,17 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           
           
           
-            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_text_04" data-content-module-id="1761855" data-content-module-template-id="1" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_text_04" data-content-module-id="1761439" data-content-module-template-id="1" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
   <div class="sixcol">
-    <div data-editable-type="text" id="text_1" class="  " data-force-html-mode="false" data-id="28550006" data-content-module-unique-id="">
+    <div data-editable-type="text" id="text_1" class="  " data-force-html-mode="false" data-id="28546014" data-content-module-unique-id="">
 
-   <p>Pharos Hospitality is a client contracted to Burnett Group by EmmyLou Burchette &amp; Associates. They are a hospitality group based in North Carolina whom we provide with designed&nbsp;property briefs and brochures.</p>  
+         <p>While I was interning for Troika Studio, I was presented with the opportunity to work on an account called Atlanta Moon Ride. Every year, participants would take to the streets of Atlanta on bicycle and ride in the dark for charity fundraising. I was tasked with designing a new logo for the event as well as posters and t-shirts using the new design.</p>      
 </div>
   </div>
   <div class="sixcol last">
-    <div data-editable-type="text" id="text_2" class="  " data-force-html-mode="false" data-id="28550007" data-content-module-unique-id="">
+    <div data-editable-type="text" id="text_2" class="  " data-force-html-mode="false" data-id="28546015" data-content-module-unique-id="">
 
-          
+                    
 </div>
   </div>
 </div>
@@ -574,9 +570,9 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           
           
           
-            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_divider_02" data-content-module-id="1761866" data-content-module-template-id="19" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="divider">
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_divider_02" data-content-module-id="1761578" data-content-module-template-id="19" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="divider">
   <div class="twelvecol last">
-    <hr class="_4ORMAT_module_divider _4ORMAT_module_divider_full _4ORMAT_module_headline_solid _4ORMAT_module_divider_thin _4ORMAT_module_divider_color_light" data-editable-type="hr" id="hr_1" data-id="28550008" data-content-module-unique-id="" />
+    <hr class="_4ORMAT_module_divider _4ORMAT_module_divider_full _4ORMAT_module_headline_solid _4ORMAT_module_divider_thin _4ORMAT_module_divider_color_light" data-editable-type="hr" id="hr_1" data-id="28547488" data-content-module-unique-id="" />
   </div>
 </div>
 
@@ -589,11 +585,11 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           
           
           
-            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_headline_01" data-content-module-id="1761867" data-content-module-template-id="6" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_headline_01" data-content-module-id="1761594" data-content-module-template-id="6" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
   <div class="twelvecol">
-    <div class="  align_center" data-editable-type="title" id="title_1" data-force-html-mode="false" data-id="28550009" data-content-module-unique-id="">
+    <div class="  align_center" data-editable-type="title" id="title_1" data-force-html-mode="false" data-id="28547559" data-content-module-unique-id="">
 
-   <p>Pharos CB Hospitality logos</p>  
+   <p>2014 logo design</p>  
 </div>
   </div>
 </div>
@@ -607,10 +603,10 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           
           
           
-            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_image_11" data-content-module-id="1761868" data-content-module-template-id="35" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="image">
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_image_11" data-content-module-id="1761595" data-content-module-template-id="35" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="image">
   <div class="twocol spacer"></div>
   <div class="eightcol">
-    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="506" data-landscape-ratio="760:506" data-linkable="true" data-portrait-ratio="2:3" data-width="760" id="image_1-1761868" data-default-img="images/bg.jpg" data-dom-id="image_1" data-link-type="none" data-link-value="" data-id="28550010" data-content-module-unique-id="">
+    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="506" data-landscape-ratio="760:506" data-linkable="true" data-portrait-ratio="2:3" data-width="760" id="image_1-1761595" data-default-img="images/bg.jpg" data-dom-id="image_1" data-link-type="none" data-link-value="" data-id="28547560" data-content-module-unique-id="">
 
 
 
@@ -639,7 +635,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
   <a  >
     
   
-    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--MjmfEbDV--/c_crop,h_489,w_736,x_135,y_41/c_fill,g_center,h_506,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--MjmfEbDV--/c_crop,h_489,w_736,x_135,y_41/c_fill,g_center,h_506,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png 1x, https://format-com-cld-res.cloudinary.com/image/private/s--VPMaMvir--/c_crop,h_489,w_736,x_135,y_41/c_fill,g_center,h_506,w_760/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png 2x"  />
+    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--jRm6-5Hw--/c_crop,h_1134,w_1763,x_0,y_0/c_fill,g_center,h_488,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/3f573d71bb08e7c3e92f69d43cad4389/finalshirtlogo.jpg" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--jRm6-5Hw--/c_crop,h_1134,w_1763,x_0,y_0/c_fill,g_center,h_488,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/3f573d71bb08e7c3e92f69d43cad4389/finalshirtlogo.jpg 1x, https://format-com-cld-res.cloudinary.com/image/private/s--4a-6jM9c--/c_crop,h_1134,w_1763,x_0,y_0/c_fill,g_center,h_488,w_760/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/3f573d71bb08e7c3e92f69d43cad4389/finalshirtlogo.jpg 2x"  />
   
 
   </a>
@@ -661,11 +657,11 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           
           
           
-            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_headline_01" data-content-module-id="1761869" data-content-module-template-id="6" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_headline_01" data-content-module-id="1761596" data-content-module-template-id="6" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
   <div class="twelvecol">
-    <div class="  align_center" data-editable-type="title" id="title_1" data-force-html-mode="false" data-id="28550011" data-content-module-unique-id="">
+    <div class="  align_center" data-editable-type="title" id="title_1" data-force-html-mode="false" data-id="28547561" data-content-module-unique-id="">
 
-   <p>property brochures</p>  
+   <p>poster design</p>  
 </div>
   </div>
 </div>
@@ -679,9 +675,9 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           
           
           
-            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_image_01" data-content-module-id="1761860" data-content-module-template-id="17" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="image">
-  <div class="twelvecol last">
-    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="440" data-landscape-ratio="1140:440" data-linkable="true" data-portrait-ratio="4:5" data-width="1140" id="image_1-1761860" data-default-img="images/bg.jpg" data-dom-id="image_1" data-link-type="none" data-link-value="" data-id="28550012" data-content-module-unique-id="">
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_image_07" data-content-module-id="1761461" data-content-module-template-id="18" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="layout">
+  <div class="fourcol">
+    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="300" data-landscape-ratio="380:300" data-linkable="true" data-portrait-ratio="3:4" data-width="380" id="image_1-1761461" data-default-img="images/bg1.jpg" data-dom-id="image_1" data-link-type="none" data-link-value="" data-id="28546141" data-content-module-unique-id="">
 
 
 
@@ -710,7 +706,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
   <a  >
     
   
-    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--F6ukydkB--/c_crop,h_2300,w_3201,x_0,y_0/c_fill,g_center,h_819,w_1140/a_auto,fl_keep_iptc.progressive,q_95/v1/e4a577aca8a2781c31ef6d9d92481572/pharosbrochures.jpg" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--F6ukydkB--/c_crop,h_2300,w_3201,x_0,y_0/c_fill,g_center,h_819,w_1140/a_auto,fl_keep_iptc.progressive,q_95/v1/e4a577aca8a2781c31ef6d9d92481572/pharosbrochures.jpg 1x, https://format-com-cld-res.cloudinary.com/image/private/s--mv7dOzen--/c_crop,h_2300,w_3201,x_0,y_0/c_fill,g_center,h_819,w_1140/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/e4a577aca8a2781c31ef6d9d92481572/pharosbrochures.jpg 2x"  />
+    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--pacOfpgB--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/e7e126d4a5cada0ecffedf7fc77e5708/Screen_Shot_2016-03-16_at_2_22_48_PM.png" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--pacOfpgB--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/e7e126d4a5cada0ecffedf7fc77e5708/Screen_Shot_2016-03-16_at_2_22_48_PM.png 1x, https://format-com-cld-res.cloudinary.com/image/private/s--aS7m7Z6M--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/e7e126d4a5cada0ecffedf7fc77e5708/Screen_Shot_2016-03-16_at_2_22_48_PM.png 2x"  />
   
 
   </a>
@@ -719,21 +715,13 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
 
 
 </div>
-  </div>
-</div>
+    <div data-editable-type="text" id="caption_1" class="  " data-force-html-mode="false" data-id="28546142" data-content-module-unique-id="">
 
-          
-        
-          
-          
-          
-          
-          
-          
-          
-            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_image_01" data-content-module-id="1761856" data-content-module-template-id="17" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="image">
-  <div class="twelvecol last">
-    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="440" data-landscape-ratio="1140:440" data-linkable="true" data-portrait-ratio="4:5" data-width="1140" id="image_1-1761856" data-default-img="images/bg.jpg" data-dom-id="image_1" data-link-type="none" data-link-value="" data-id="28550013" data-content-module-unique-id="">
+   <p>official event poster</p>  
+</div>
+  </div>
+  <div class="fourcol">
+    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="300" data-landscape-ratio="380:300" data-linkable="true" data-portrait-ratio="3:4" data-width="380" id="image_2-1761461" data-default-img="images/bg2.jpg" data-dom-id="image_2" data-link-type="none" data-link-value="" data-id="28546143" data-content-module-unique-id="">
 
 
 
@@ -762,7 +750,108 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
   <a  >
     
   
-    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--B8MZgSMp--/c_limit,g_center,h_676,w_1017/a_auto,fl_keep_iptc.progressive,q_95/v1/37a9109c8662f3ced575a67c7a462e69/Screen_Shot_2016-03-14_at_3_36_34_PM.png" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--B8MZgSMp--/c_limit,g_center,h_676,w_1017/a_auto,fl_keep_iptc.progressive,q_95/v1/37a9109c8662f3ced575a67c7a462e69/Screen_Shot_2016-03-14_at_3_36_34_PM.png 1x, https://format-com-cld-res.cloudinary.com/image/private/s--rWUMBaA2--/c_limit,g_center,h_676,w_1017/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/37a9109c8662f3ced575a67c7a462e69/Screen_Shot_2016-03-14_at_3_36_34_PM.png 2x"  />
+    <img src="https://format-com-cld-res.cloudinary.com/image/private/s---BmVWMFa--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/38577226772fabef11eb7694e6bdacc9/Screen_Shot_2016-03-16_at_2_22_56_PM.png" srcset="https://format-com-cld-res.cloudinary.com/image/private/s---BmVWMFa--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/38577226772fabef11eb7694e6bdacc9/Screen_Shot_2016-03-16_at_2_22_56_PM.png 1x, https://format-com-cld-res.cloudinary.com/image/private/s--1vwn4S5d--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/38577226772fabef11eb7694e6bdacc9/Screen_Shot_2016-03-16_at_2_22_56_PM.png 2x"  />
+  
+
+  </a>
+
+
+
+
+</div>
+    <div data-editable-type="text" id="caption_2" class="  " data-force-html-mode="false" data-id="28546144" data-content-module-unique-id="">
+
+      <p>       limited edition collectible poster</p>    
+</div>
+  </div>
+  <div class="fourcol last">
+    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="300" data-landscape-ratio="380:300" data-linkable="true" data-portrait-ratio="3:4" data-width="380" id="image_3-1761461" data-default-img="images/bg3.jpg" data-dom-id="image_3" data-link-type="none" data-link-value="" data-id="28546145" data-content-module-unique-id="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <a  >
+    
+  
+    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--tRAXDE9L--/c_crop,h_726,w_545,x_268,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/e5eda99bad66f217e99da8686b183012/Screen_Shot_2016-03-16_at_2_23_08_PM.png" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--tRAXDE9L--/c_crop,h_726,w_545,x_268,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/e5eda99bad66f217e99da8686b183012/Screen_Shot_2016-03-16_at_2_23_08_PM.png 1x, https://format-com-cld-res.cloudinary.com/image/private/s--ntIAVyDo--/c_crop,h_726,w_545,x_268,y_0/c_fill,g_center,h_506,w_380/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/e5eda99bad66f217e99da8686b183012/Screen_Shot_2016-03-16_at_2_23_08_PM.png 2x"  />
+  
+
+  </a>
+
+
+
+
+</div>
+    <div data-editable-type="text" id="caption_3" class="  " data-force-html-mode="false" data-id="28546146" data-content-module-unique-id="">
+
+      <p>       backup event&nbsp;poster</p>    
+</div>
+  </div>
+</div>
+
+          
+        
+          
+          
+          
+          
+          
+          
+          
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_image_11" data-content-module-id="1761597" data-content-module-template-id="35" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="image">
+  <div class="twocol spacer"></div>
+  <div class="eightcol">
+    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="506" data-landscape-ratio="760:506" data-linkable="true" data-portrait-ratio="2:3" data-width="760" id="image_1-1761597" data-default-img="images/bg.jpg" data-dom-id="image_1" data-link-type="none" data-link-value="" data-id="28547562" data-content-module-unique-id="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <a  >
+    
+  
+    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--LCBSUFfm--/c_crop,h_665,w_1000,x_0,y_0/c_fill,g_center,h_506,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/5b2b75da4eadcc00e2cce117b0e369a2/Screen_Shot_2016-03-16_at_2_23_24_PM.png" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--LCBSUFfm--/c_crop,h_665,w_1000,x_0,y_0/c_fill,g_center,h_506,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/5b2b75da4eadcc00e2cce117b0e369a2/Screen_Shot_2016-03-16_at_2_23_24_PM.png 1x, https://format-com-cld-res.cloudinary.com/image/private/s--fqiKGV6d--/c_crop,h_665,w_1000,x_0,y_0/c_fill,g_center,h_506,w_760/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/5b2b75da4eadcc00e2cce117b0e369a2/Screen_Shot_2016-03-16_at_2_23_24_PM.png 2x"  />
   
 
   </a>
@@ -772,6 +861,153 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
 
 </div>
   </div>
+  <div class="twocol spacer last"></div>
+</div>
+
+          
+        
+          
+          
+          
+          
+          
+          
+          
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_headline_01" data-content-module-id="1761598" data-content-module-template-id="6" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
+  <div class="twelvecol">
+    <div class="  align_center" data-editable-type="title" id="title_1" data-force-html-mode="false" data-id="28547563" data-content-module-unique-id="">
+
+   <p>t-shirt design</p>  
+</div>
+  </div>
+</div>
+
+          
+        
+          
+          
+          
+          
+          
+          
+          
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_image_01" data-content-module-id="1761599" data-content-module-template-id="17" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="image">
+  <div class="twelvecol last">
+    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="440" data-landscape-ratio="1140:440" data-linkable="true" data-portrait-ratio="4:5" data-width="1140" id="image_1-1761599" data-default-img="images/bg.jpg" data-dom-id="image_1" data-link-type="none" data-link-value="" data-id="28547564" data-content-module-unique-id="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <a  >
+    
+  
+    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--TuqXEw2X--/c_crop,h_2400,w_2400,x_0,y_0/c_fill,g_center,h_1140,w_1140/a_auto,fl_keep_iptc.progressive,q_95/v1/f6f56f57960d5e6c4b44b953b28d8129/atlmr_tshirt_distressedlogo.jpg" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--TuqXEw2X--/c_crop,h_2400,w_2400,x_0,y_0/c_fill,g_center,h_1140,w_1140/a_auto,fl_keep_iptc.progressive,q_95/v1/f6f56f57960d5e6c4b44b953b28d8129/atlmr_tshirt_distressedlogo.jpg 1x, https://format-com-cld-res.cloudinary.com/image/private/s--YucZXYMl--/c_crop,h_2400,w_2400,x_0,y_0/c_fill,g_center,h_1140,w_1140/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/f6f56f57960d5e6c4b44b953b28d8129/atlmr_tshirt_distressedlogo.jpg 2x"  />
+  
+
+  </a>
+
+
+
+
+</div>
+  </div>
+</div>
+
+          
+        
+          
+          
+          
+          
+          
+          
+          
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_headline_01" data-content-module-id="1761600" data-content-module-template-id="6" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="text">
+  <div class="twelvecol">
+    <div class="  align_center" data-editable-type="title" id="title_1" data-force-html-mode="false" data-id="28547565" data-content-module-unique-id="">
+
+   <p>t-shirt design (images not taken by me)</p>  
+</div>
+  </div>
+</div>
+
+          
+        
+          
+          
+          
+          
+          
+          
+          
+            <div class="_4ORMAT_content_page_row _4ormat_sort_item _4ORMAT_module_image_12" data-content-module-id="1761457" data-content-module-template-id="44" data-content-module-unique-id="" data-content-module-removable="true" data-content-module-category="layout">
+  <div class="twocol spacer"></div>
+  <div class="eightcol">
+    <div data-croppable="true" data-default-shape="landscape" data-editable-type="image" data-height="506" data-landscape-ratio="760:506" data-linkable="true" data-portrait-ratio="2:3" data-width="760" id="image_1-1761457" data-default-img="images/bg.jpg" data-dom-id="image_1" data-link-type="none" data-link-value="" data-id="28546026" data-content-module-unique-id="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <a  >
+    
+  
+    <img src="https://format-com-cld-res.cloudinary.com/image/private/s--sd03XsP5--/c_limit,g_center,h_504,w_660/a_auto,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg" srcset="https://format-com-cld-res.cloudinary.com/image/private/s--sd03XsP5--/c_limit,g_center,h_504,w_660/a_auto,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg 1x, https://format-com-cld-res.cloudinary.com/image/private/s--YlhkivWt--/c_limit,g_center,h_504,w_660/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg 2x"  />
+  
+
+  </a>
+
+
+
+
+</div>
+    <div data-editable-type="text" id="caption_1" class="  " data-force-html-mode="false" data-id="28546027" data-content-module-unique-id="">
+
+   <p><br></p>  
+</div>
+  </div>
+  <div class="twocol spacer last"></div>
 </div>
 
           
@@ -813,7 +1049,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         
     
     
-        <a href="3257858-pharos-hospitality#" id="share_4ormat_link" class="social-share" title="Share" data-direction="top">
+        <a href="atlanta-moon-ride.html#" id="share_4ormat_link" class="social-share" title="Share" data-direction="top">
             Share
         </a>
     
@@ -948,7 +1184,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
 
 <script type='text/javascript'>
   //<![CDATA[
-    var _4ORMAT_DATA = {"asset_base_path":"//bucket2.format-assets.com/theme_versions/2378306/assets/","page":{"id":3257858,"hide_using_4ormat":false,"type":"content","layout":null,"name":"Pharos Hospitality","image_width":null,"layout_options":null,"category_id":199238,"dependencies":{"fonts":{"adobe":{"url":"//use.edgefonts.net/karla.js"},"4ormat":true},"javascripts":["_common/large_headline_shim.js","_common/colour_adjustments.js"],"stylesheets":["_common/module_base.css","stackable/headline_01/stylesheets/style.css"]},"url":"/3257858-pharos-hospitality","access_control":"online","is_homepage":false,"is_title_page":false,"cover_image":null,"content_modules":[{"id":1761854,"category":"text","removable":true,"template_path":"stackable/public/headline_01/template","position":1,"content_page_assets":{"text_1":{"copy":"<p>Est penatibus a nunc porta ullamcorper in taciti porttitor dapibus suspendisse faucibus cubilia iaculis nam vestibulum est a curabitur. A mi scelerisque eu enim nec nisi molestie parturient amet consectetur sem quis a eget dictum sodales ullamcorper. Ad facilisi quisque euismod lacinia suscipit cubilia facilisi vestibulum mi et.</p>"},"text_2":{"copy":null},"title_1":{"id":28550005,"type":"title","copy":"<h2 class=\"xl-headline\">Pharos Hospitality</h2>","tag":"title_1","copy_alignment":"left","wysiwyg_disallowed":false}},"template_id":6,"unique_id":null},{"id":1761855,"category":"text","removable":true,"template_path":"stackable/public/text_04/template","position":2,"content_page_assets":{"text_1":{"id":28550006,"type":"title","copy":"<p>Pharos Hospitality is a client contracted to Burnett Group by EmmyLou Burchette &amp; Associates. They are a hospitality group based in North Carolina whom we provide with designed&nbsp;property briefs and brochures.</p>","tag":"text_1","copy_alignment":"","wysiwyg_disallowed":false},"text_2":{"id":28550007,"type":"title","copy":"\n\n     \n","tag":"text_2","copy_alignment":"","wysiwyg_disallowed":false}},"template_id":1,"unique_id":null},{"id":1761866,"category":"divider","removable":true,"template_path":"stackable/public/divider_02/template","position":4,"content_page_assets":{"hr_1":{"id":28550008,"type":"title","copy":"","tag":"hr_1","copy_alignment":"none","wysiwyg_disallowed":false}},"template_id":19,"unique_id":null},{"id":1761867,"category":"text","removable":true,"template_path":"stackable/public/headline_01/template","position":5,"content_page_assets":{"text_1":{"copy":"<p>Vehicula a tellus nulla nostra dictumst himenaeos himenaeos sapien nisl vestibulum justo gravida arcu condimentum cursus. Parturient a rhoncus scelerisque in class feugiat quis natoque vestibulum sit aliquet mi cras vestibulum non vehicula hac suscipit nunc scelerisque a elementum adipiscing.</p> <p>Eu ultricies scelerisque a curae leo imperdiet sodales cubilia curabitur consectetur eros ad dui eget integer ante per parturient vestibulum scelerisque.</p>"},"text_2":{"copy":null},"title_1":{"id":28550009,"type":"title","copy":"<p>Pharos CB Hospitality logos</p>","tag":"title_1","copy_alignment":"center","wysiwyg_disallowed":false}},"template_id":6,"unique_id":null},{"id":1761868,"category":"image","removable":true,"template_path":"stackable/public/image_11/template","position":6,"content_page_assets":{"image_1":{"id":28550010,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--Xo7exoTF--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png","link_url":null,"open_in_new_window":false,"tag":"image_1","alt_text":"","dominant_color":"#FFFFFF","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--LEAsZDJK--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png","image_dimensions_1600x1200":[1088,573],"image_crop_id":5132667,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--MjmfEbDV--/c_crop,h_489,w_736,x_135,y_41/c_fill,g_center,h_506,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--VPMaMvir--/c_crop,h_489,w_736,x_135,y_41/c_fill,g_center,h_506,w_760/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--LEAsZDJK--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png","resource_width":1088,"actual_width":1088,"actual_height":573,"link_type":"none","link_value":"","shape":"landscape","vfs_file_id":19099592,"topX":135,"topY":41,"bottomX":871,"bottomY":530,"width":760,"height":506}},"template_id":35,"unique_id":null},{"id":1761869,"category":"text","removable":true,"template_path":"stackable/public/headline_01/template","position":7,"content_page_assets":{"text_1":{"copy":"<p>Tincidunt suspendisse netus himenaeos fringilla lacinia leo velit vitae ac consectetur a leo dolor adipiscing pharetra vehicula libero. Sapien nibh nisi himenaeos quis accumsan luctus a ultricies scelerisque turpis condimentum class montes ante volutpat.</p> <p>Class vel adipiscing a dui parturient parturient vestibulum nibh ut dui a a a parturient bibendum nam condimentum suspendisse a a at. Gravida suspendisse vestibulum a lectus sodales himenaeos scelerisque adipiscing fermentum class ullamcorper et platea mi suspendisse vestibulum tellus.</p>"},"text_2":{"copy":null},"title_1":{"id":28550011,"type":"title","copy":"<p>property brochures</p>","tag":"title_1","copy_alignment":"center","wysiwyg_disallowed":false}},"template_id":6,"unique_id":null},{"id":1761860,"category":"image","removable":true,"template_path":"stackable/public/image_01/template","position":8,"content_page_assets":{"image_1":{"id":28550012,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--5JJiHYVO--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/e4a577aca8a2781c31ef6d9d92481572/pharosbrochures.jpg","link_url":null,"open_in_new_window":false,"tag":"image_1","alt_text":"","dominant_color":"#111012","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--iX5LSeIT--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/e4a577aca8a2781c31ef6d9d92481572/pharosbrochures.jpg","image_dimensions_1600x1200":[1670,1200],"image_crop_id":5132668,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--F6ukydkB--/c_crop,h_2300,w_3201,x_0,y_0/c_fill,g_center,h_819,w_1140/a_auto,fl_keep_iptc.progressive,q_95/v1/e4a577aca8a2781c31ef6d9d92481572/pharosbrochures.jpg","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--mv7dOzen--/c_crop,h_2300,w_3201,x_0,y_0/c_fill,g_center,h_819,w_1140/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/e4a577aca8a2781c31ef6d9d92481572/pharosbrochures.jpg","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--iX5LSeIT--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/e4a577aca8a2781c31ef6d9d92481572/pharosbrochures.jpg","resource_width":3200,"actual_width":1670,"actual_height":1200,"link_type":"none","link_value":"","shape":"original","vfs_file_id":19336309,"topX":0,"topY":0,"bottomX":1670,"bottomY":1200,"width":1140,"height":819}},"template_id":17,"unique_id":null},{"id":1761856,"category":"image","removable":true,"template_path":"stackable/public/image_01/template","position":9,"content_page_assets":{"image_1":{"id":28550013,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--c0BjJ1EH--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/37a9109c8662f3ced575a67c7a462e69/Screen_Shot_2016-03-14_at_3_36_34_PM.png","link_url":null,"open_in_new_window":false,"tag":"image_1","alt_text":"","dominant_color":"#343434","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--5-SS06Tj--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/37a9109c8662f3ced575a67c7a462e69/Screen_Shot_2016-03-14_at_3_36_34_PM.png","image_dimensions_1600x1200":[931,619],"image_crop_id":5132669,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--B8MZgSMp--/c_limit,g_center,h_676,w_1017/a_auto,fl_keep_iptc.progressive,q_95/v1/37a9109c8662f3ced575a67c7a462e69/Screen_Shot_2016-03-14_at_3_36_34_PM.png","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--rWUMBaA2--/c_limit,g_center,h_676,w_1017/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/37a9109c8662f3ced575a67c7a462e69/Screen_Shot_2016-03-14_at_3_36_34_PM.png","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--5-SS06Tj--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/37a9109c8662f3ced575a67c7a462e69/Screen_Shot_2016-03-14_at_3_36_34_PM.png","resource_width":931,"actual_width":931,"actual_height":619,"link_type":"none","link_value":"","shape":"original","vfs_file_id":19051534,"topX":-86,"topY":-57,"bottomX":931,"bottomY":619,"width":1140,"height":757}},"template_id":17,"unique_id":null}],"needs_wrap":true,"content_editable":false,"content_page_inject_css":"application/content_pages/content_page_inject.css"},"menu_items":[{"id":3113721,"type":"content","name":"home","href":"/index","open_in_new_window":true,"cover_image":null,"is_title_page":true},{"id":199238,"type":"category","name":"work","pages":[{"id":3257410,"type":"content","name":"American Culinary Federation","href":"/3257410-american-culinary-federation","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257544,"type":"content","name":"Atlanta Moon Ride","href":"/3257544-atlanta-moon-ride","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257570,"type":"content","name":"Capital Group","href":"/3257570-capital-group","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257668,"type":"content","name":"Chamber Fitness","href":"/3257668-chamber-fitness","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257737,"type":"content","name":"G_Farrell Consulting","href":"/3257737-g_farrell-consulting","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3259953,"type":"content","name":"Intermarket","href":"/3259953-intermarket","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257764,"type":"content","name":"Keefe Bruyette & Woods","href":"/3257764-keefe-bruyette-woods","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257786,"type":"content","name":"Mill Basin Kosher Delicatessen","href":"/3257786-mill-basin-kosher-delicatessen","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257258,"type":"content","name":"Terra Capital Partners","href":"/3257258-terra-capital-partners","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257858,"type":"content","name":"Pharos Hospitality","href":"/3257858-pharos-hospitality","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257873,"type":"content","name":"VER","href":"/3257873-ver","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257886,"type":"content","name":"35mm Magazine","href":"/3257886-35mm-magazine","open_in_new_window":true,"cover_image":null,"is_title_page":false}]},{"id":199255,"type":"category","name":"photography","pages":[{"id":3066101,"type":"gallery","name":"Film","href":"/3066101-film","open_in_new_window":true,"cover_image":null},{"id":3066414,"type":"gallery","name":"Digital","href":"/3066414-digital","open_in_new_window":true,"cover_image":null}]},{"id":3065658,"type":"content","name":"about","href":"/about","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3065659,"type":"content","name":"contact","href":"/contact","open_in_new_window":true,"cover_image":null,"is_title_page":false}],"paths":{"root":"/","theme_stylesheet":"//cara1yn.format.com/stylesheet.css","using":"http://www.format.com/l/your_new_portfolio#sierra"},"theme":{"background_color":"#ffffff","enable_header_background":false,"header_background_color":"#fafafa","menu_alignment":"Top","logo_image":null,"logo_text":"caralyn farrell design","logo_typography":{"color":"#111111","font-family":"\"Freight Sans Light\", \"Freight Sans Light\", sans-serif","font-weight":"bold","font-size":"24"},"logo_letter_spacing":"Loose","text_typography":{"color":"#232323","font-family":"\"Freight Sans Book\", \"Freight Sans Book\", sans-serif","font-size":"12","line-height":1.5},"headline_typography":{"color":"#343434","font-family":"karla, sans-serif","font-size":24,"font-weight":"bold"},"link_typography":{"color":"#444444","font-style":"normal","font-weight":"normal","text-decoration":"underline","hover":{"color":"#999999","text-decoration":"underline"}},"post_text":"&copy; caralyn farrell 2016. all rights reserved.","post_text_typography":{"color":"#343434","font-family":"\"Benton Sans Thin\", \"Benton Sans Thin\", sans-serif","font-size":12,"font-style":"normal"},"menu_typography":{"color":"#222222","font-family":"karla, sans-serif","font-size":15,"hover":{"color":"#555555"},"selected":{"color":"#ed8374","font-weight":"bold"}},"menu_category_typography":{"font-weight":"normal"},"menu_group_background":true,"menu_group_background_color":"#fafafa","gallery_caption_typography":{"color":"#232323","font-family":"\"Freight Sans Book\", \"Freight Sans Book\", sans-serif","font-size":14},"gallery_caption_alignment":"Left","gallery_shrink_portrait_images":false,"listing_image_size":"Medium","listing_gutter_size":"Normal","listing_larger_images":true,"listing_thumbnail_overlay_color":"#ffffff","listing_caption_typography":{"color":"#343434","font-family":"\"Freight Sans Light\", \"Freight Sans Light\", sans-serif","font-size":"10","font-weight":"normal","hover":{"color":"#999999"}},"listing_caption_alignment":"Left","listing_navigation_typography":{"color":"#4d4d4d","font-family":"\"Freight Sans Light\", \"Freight Sans Light\", sans-serif","font-size":"12","hover":{"color":"#525252"}},"listing_navigation_title":true,"listing_navigation_pagination":true,"enable_nested_listing":false,"social_icons_typography":{"color":"#999999","font-size":11.7,"font-weight":"normal","hover":{"color":"#555555"}},"social_links_style":"Text","icon1":"LinkedIn","icon1text":"https://www.linkedin.com/in/cara1yn","icon2":"None","icon2text":"","icon3":"None","icon3text":"http://linkedin.com/","icon4":"None","icon4text":null,"icon5":"None","icon5text":null,"show_social_sharing":true,"blog_title_typography":{"font-family":"karla, sans-serif","color":"#343434","font-size":28,"font-weight":"bold","font-style":"normal","hover":{"text-decoration":"underline","color":"#484848"}},"blog_body_typography":{"font-family":"karla, sans-serif","color":"#343434","line-height":1.6,"font-size":16},"blog_caption_typography":{"font-family":"karla, sans-serif","font-size":14},"blog_images_slideshow_color":"Light","logo_image_thumbnails":null,"logo_image_trimmed":null},"meta":{"authorized":true,"currency_entity":null,"currency_code":null,"has_active_store":false,"form_authenticity_token":"H2H11lNiBa8uNADI8uPQjqTVXxA9M/Akw4XQ5TVtu1Bg1xGNGAXnoacYV+hRx7p2U9DD7P/vD9Pe12XNS2Wdxg==","theme_version":29,"theme_name":"Sierra","password_submitted":false,"profession_identifier":0,"country_identifier":886,"using":{"right":20,"bottom":20},"explicit":false,"mobile":{},"meta_description":"caralyn farrell | design, branding, marketing and typography.","social_description":"caralyn farrell | design, branding, marketing and typography.","template_name":"simple","api_version":2,"fb_url":"http://www.caralynfarrell.com//3257858-pharos-hospitality","fb_image":"https://format-com-cld-res.cloudinary.com/image/private/s--Xo7exoTF--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/38695b285370ae81ef35f58ce77b01d7/Screen_Shot_2016-03-16_at_10_35_28_AM.png","fb_image_width":960,"fb_image_height":506,"title":"caralyn farrell | design, branding, marketing - Pharos Hospitality"},"site":{"custom_head_content":null,"fav_icon_url":"https://format-com-cld-res.cloudinary.com/image/upload/s--FEKF_NOx--/c_limit,g_center,h_16,w_16/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.ico","hide_using_4ormat":false,"image_protection_blurb":"copyright © 2016 caralyn farrell. all rights reserved.","instagram_access_token":"47431062.ff31c92.89ad56eb695a41358f469cd7dc656757","invalidated_at":1505171321,"meta_description":"caralyn farrell | design, branding, marketing and typography.","meta_keywords":"caralyn farrell, graphic design, web design, marketing, branding, identity, web development, burnett group, designer","name":"caralyn farrell | design, branding, marketing","png_favicons":{"16":"https://format-com-cld-res.cloudinary.com/image/upload/s--c4homh0G--/c_limit,g_center,h_16,w_16/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png","32":"https://format-com-cld-res.cloudinary.com/image/upload/s--Xe9UnMMQ--/c_limit,g_center,h_32,w_32/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png","96":"https://format-com-cld-res.cloudinary.com/image/upload/s--DHTU2E4u--/c_limit,g_center,h_96,w_96/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png","192":"https://format-com-cld-res.cloudinary.com/image/upload/s--XgTi_an1--/c_limit,g_center,h_192,w_192/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png"},"protect_images":true,"system_google_analytics_key":"UA-11743039-2","url":"http://www.caralynfarrell.com","user_google_analytics_key":null}};
+    var _4ORMAT_DATA = {"asset_base_path":"//bucket2.format-assets.com/theme_versions/2378306/assets/","page":{"id":3257544,"hide_using_4ormat":false,"type":"content","layout":null,"name":"Atlanta Moon Ride","image_width":null,"layout_options":null,"category_id":199238,"dependencies":{"fonts":{"adobe":{"url":"//use.edgefonts.net/karla.js"},"4ormat":true},"javascripts":["_common/large_headline_shim.js","_common/colour_adjustments.js"],"stylesheets":["_common/module_base.css","stackable/headline_01/stylesheets/style.css"]},"url":"/atlanta-moon-ride.html","access_control":"online","is_homepage":false,"is_title_page":false,"cover_image":null,"content_modules":[{"id":1761438,"category":"text","removable":true,"template_path":"stackable/public/headline_01/template","position":1,"content_page_assets":{"text_1":{"copy":"<p>Est penatibus a nunc porta ullamcorper in taciti porttitor dapibus suspendisse faucibus cubilia iaculis nam vestibulum est a curabitur. A mi scelerisque eu enim nec nisi molestie parturient amet consectetur sem quis a eget dictum sodales ullamcorper. Ad facilisi quisque euismod lacinia suscipit cubilia facilisi vestibulum mi et.</p>"},"text_2":{"copy":null},"title_1":{"id":28546013,"type":"title","copy":"\n\n      <h2 class=\"xl-headline\">Atlanta Moon Ride</h2>    \n","tag":"title_1","copy_alignment":"left","wysiwyg_disallowed":false}},"template_id":6,"unique_id":null},{"id":1761439,"category":"text","removable":true,"template_path":"stackable/public/text_04/template","position":2,"content_page_assets":{"text_1":{"id":28546014,"type":"title","copy":"\n\n      <p>While I was interning for Troika Studio, I was presented with the opportunity to work on an account called Atlanta Moon Ride. Every year, participants would take to the streets of Atlanta on bicycle and ride in the dark for charity fundraising. I was tasked with designing a new logo for the event as well as posters and t-shirts using the new design.</p>    \n","tag":"text_1","copy_alignment":"","wysiwyg_disallowed":false},"text_2":{"id":28546015,"type":"title","copy":"\n\n               \n","tag":"text_2","copy_alignment":"","wysiwyg_disallowed":false}},"template_id":1,"unique_id":null},{"id":1761578,"category":"divider","removable":true,"template_path":"stackable/public/divider_02/template","position":4,"content_page_assets":{"hr_1":{"id":28547488,"type":"title","copy":"","tag":"hr_1","copy_alignment":"none","wysiwyg_disallowed":false}},"template_id":19,"unique_id":null},{"id":1761594,"category":"text","removable":true,"template_path":"stackable/public/headline_01/template","position":5,"content_page_assets":{"text_1":{"copy":"<p>Vehicula a tellus nulla nostra dictumst himenaeos himenaeos sapien nisl vestibulum justo gravida arcu condimentum cursus. Parturient a rhoncus scelerisque in class feugiat quis natoque vestibulum sit aliquet mi cras vestibulum non vehicula hac suscipit nunc scelerisque a elementum adipiscing.</p> <p>Eu ultricies scelerisque a curae leo imperdiet sodales cubilia curabitur consectetur eros ad dui eget integer ante per parturient vestibulum scelerisque.</p>"},"text_2":{"copy":null},"title_1":{"id":28547559,"type":"title","copy":"<p>2014 logo design</p>","tag":"title_1","copy_alignment":"center","wysiwyg_disallowed":false}},"template_id":6,"unique_id":null},{"id":1761595,"category":"image","removable":true,"template_path":"stackable/public/image_11/template","position":6,"content_page_assets":{"image_1":{"id":28547560,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--2sGYnXpH--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/3f573d71bb08e7c3e92f69d43cad4389/finalshirtlogo.jpg","link_url":null,"open_in_new_window":false,"tag":"image_1","alt_text":"","dominant_color":"#FFFFFF","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--HtDMfVR6--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/3f573d71bb08e7c3e92f69d43cad4389/finalshirtlogo.jpg","image_dimensions_1600x1200":[1764,1134],"image_crop_id":5131827,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--jRm6-5Hw--/c_crop,h_1134,w_1763,x_0,y_0/c_fill,g_center,h_488,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/3f573d71bb08e7c3e92f69d43cad4389/finalshirtlogo.jpg","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--4a-6jM9c--/c_crop,h_1134,w_1763,x_0,y_0/c_fill,g_center,h_488,w_760/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/3f573d71bb08e7c3e92f69d43cad4389/finalshirtlogo.jpg","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--HtDMfVR6--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/3f573d71bb08e7c3e92f69d43cad4389/finalshirtlogo.jpg","resource_width":1764,"actual_width":1764,"actual_height":1134,"link_type":"none","link_value":"","shape":"original","vfs_file_id":19346828,"topX":0,"topY":0,"bottomX":1763,"bottomY":1134,"width":760,"height":488}},"template_id":35,"unique_id":null},{"id":1761596,"category":"text","removable":true,"template_path":"stackable/public/headline_01/template","position":7,"content_page_assets":{"text_1":{"copy":"<p>Tincidunt suspendisse netus himenaeos fringilla lacinia leo velit vitae ac consectetur a leo dolor adipiscing pharetra vehicula libero. Sapien nibh nisi himenaeos quis accumsan luctus a ultricies scelerisque turpis condimentum class montes ante volutpat.</p> <p>Class vel adipiscing a dui parturient parturient vestibulum nibh ut dui a a a parturient bibendum nam condimentum suspendisse a a at. Gravida suspendisse vestibulum a lectus sodales himenaeos scelerisque adipiscing fermentum class ullamcorper et platea mi suspendisse vestibulum tellus.</p>"},"text_2":{"copy":null},"title_1":{"id":28547561,"type":"title","copy":"<p>poster design</p>","tag":"title_1","copy_alignment":"center","wysiwyg_disallowed":false}},"template_id":6,"unique_id":null},{"id":1761461,"category":"layout","removable":true,"template_path":"stackable/public/image_07/template","position":8,"content_page_assets":{"image_1":{"id":28546141,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--TzlfZeJx--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/e7e126d4a5cada0ecffedf7fc77e5708/Screen_Shot_2016-03-16_at_2_22_48_PM.png","link_url":null,"open_in_new_window":false,"tag":"image_1","alt_text":"","dominant_color":"#2B2B2A","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--fRQs-u-I--/c_limit,g_center,h_65535,w_1600/a_auto,fl_keep_iptc.progressive,q_95/v1/e7e126d4a5cada0ecffedf7fc77e5708/Screen_Shot_2016-03-16_at_2_22_48_PM.png","image_dimensions_1600x1200":[446,596],"image_crop_id":5131828,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--pacOfpgB--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/e7e126d4a5cada0ecffedf7fc77e5708/Screen_Shot_2016-03-16_at_2_22_48_PM.png","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--aS7m7Z6M--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/e7e126d4a5cada0ecffedf7fc77e5708/Screen_Shot_2016-03-16_at_2_22_48_PM.png","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--fRQs-u-I--/c_limit,g_center,h_65535,w_1600/a_auto,fl_keep_iptc.progressive,q_95/v1/e7e126d4a5cada0ecffedf7fc77e5708/Screen_Shot_2016-03-16_at_2_22_48_PM.png","resource_width":446,"actual_width":446,"actual_height":596,"link_type":"none","link_value":"","shape":"portrait","vfs_file_id":19104323,"topX":0,"topY":0,"bottomX":446,"bottomY":594,"width":380,"height":506},"image_2":{"id":28546143,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--B6lVDdW5--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/38577226772fabef11eb7694e6bdacc9/Screen_Shot_2016-03-16_at_2_22_56_PM.png","link_url":null,"open_in_new_window":false,"tag":"image_2","alt_text":"","dominant_color":"#292929","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--63DQcWRC--/c_limit,g_center,h_65535,w_1600/a_auto,fl_keep_iptc.progressive,q_95/v1/38577226772fabef11eb7694e6bdacc9/Screen_Shot_2016-03-16_at_2_22_56_PM.png","image_dimensions_1600x1200":[471,595],"image_crop_id":5131829,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s---BmVWMFa--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/38577226772fabef11eb7694e6bdacc9/Screen_Shot_2016-03-16_at_2_22_56_PM.png","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--1vwn4S5d--/c_crop,h_594,w_446,x_0,y_0/c_fill,g_center,h_506,w_380/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/38577226772fabef11eb7694e6bdacc9/Screen_Shot_2016-03-16_at_2_22_56_PM.png","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--63DQcWRC--/c_limit,g_center,h_65535,w_1600/a_auto,fl_keep_iptc.progressive,q_95/v1/38577226772fabef11eb7694e6bdacc9/Screen_Shot_2016-03-16_at_2_22_56_PM.png","resource_width":471,"actual_width":471,"actual_height":595,"link_type":"none","link_value":"","shape":"portrait","vfs_file_id":19104325,"topX":0,"topY":0,"bottomX":446,"bottomY":594,"width":380,"height":506},"image_3":{"id":28546145,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--xgkD_JKL--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/e5eda99bad66f217e99da8686b183012/Screen_Shot_2016-03-16_at_2_23_08_PM.png","link_url":null,"open_in_new_window":false,"tag":"image_3","alt_text":"","dominant_color":"#73736C","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--Z7-NHxl7--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/e5eda99bad66f217e99da8686b183012/Screen_Shot_2016-03-16_at_2_23_08_PM.png","image_dimensions_1600x1200":[1008,727],"image_crop_id":5131830,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--tRAXDE9L--/c_crop,h_726,w_545,x_268,y_0/c_fill,g_center,h_506,w_380/a_auto,fl_keep_iptc.progressive,q_95/v1/e5eda99bad66f217e99da8686b183012/Screen_Shot_2016-03-16_at_2_23_08_PM.png","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--ntIAVyDo--/c_crop,h_726,w_545,x_268,y_0/c_fill,g_center,h_506,w_380/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/e5eda99bad66f217e99da8686b183012/Screen_Shot_2016-03-16_at_2_23_08_PM.png","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--Z7-NHxl7--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/e5eda99bad66f217e99da8686b183012/Screen_Shot_2016-03-16_at_2_23_08_PM.png","resource_width":1008,"actual_width":1008,"actual_height":727,"link_type":"none","link_value":"","shape":"portrait","vfs_file_id":19104326,"topX":268,"topY":0,"bottomX":813,"bottomY":726,"width":380,"height":506},"caption_1":{"id":28546142,"type":"title","copy":"<p>official event poster</p>","tag":"caption_1","copy_alignment":"","wysiwyg_disallowed":false},"caption_2":{"id":28546144,"type":"title","copy":"\n\n   <p>       limited edition collectible poster</p>  \n","tag":"caption_2","copy_alignment":"","wysiwyg_disallowed":false},"caption_3":{"id":28546146,"type":"title","copy":"\n\n   <p>       backup event&nbsp;poster</p>  \n","tag":"caption_3","copy_alignment":"","wysiwyg_disallowed":false}},"template_id":18,"unique_id":null},{"id":1761597,"category":"image","removable":true,"template_path":"stackable/public/image_11/template","position":14,"content_page_assets":{"image_1":{"id":28547562,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--Ts7m2vUc--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/5b2b75da4eadcc00e2cce117b0e369a2/Screen_Shot_2016-03-16_at_2_23_24_PM.png","link_url":null,"open_in_new_window":false,"tag":"image_1","alt_text":"","dominant_color":"#110E0D","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--SfDUTY9b--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/5b2b75da4eadcc00e2cce117b0e369a2/Screen_Shot_2016-03-16_at_2_23_24_PM.png","image_dimensions_1600x1200":[1000,725],"image_crop_id":5131831,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--LCBSUFfm--/c_crop,h_665,w_1000,x_0,y_0/c_fill,g_center,h_506,w_760/a_auto,fl_keep_iptc.progressive,q_95/v1/5b2b75da4eadcc00e2cce117b0e369a2/Screen_Shot_2016-03-16_at_2_23_24_PM.png","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--fqiKGV6d--/c_crop,h_665,w_1000,x_0,y_0/c_fill,g_center,h_506,w_760/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/5b2b75da4eadcc00e2cce117b0e369a2/Screen_Shot_2016-03-16_at_2_23_24_PM.png","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--SfDUTY9b--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/5b2b75da4eadcc00e2cce117b0e369a2/Screen_Shot_2016-03-16_at_2_23_24_PM.png","resource_width":1000,"actual_width":1000,"actual_height":725,"link_type":"none","link_value":"","shape":"landscape","vfs_file_id":19104328,"topX":0,"topY":0,"bottomX":1000,"bottomY":665,"width":760,"height":506}},"template_id":35,"unique_id":null},{"id":1761598,"category":"text","removable":true,"template_path":"stackable/public/headline_01/template","position":15,"content_page_assets":{"title_1":{"id":28547563,"type":"title","copy":"<p>t-shirt design</p>","tag":"title_1","copy_alignment":"center","wysiwyg_disallowed":false}},"template_id":6,"unique_id":null},{"id":1761599,"category":"image","removable":true,"template_path":"stackable/public/image_01/template","position":16,"content_page_assets":{"image_1":{"id":28547564,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--z9_uUviG--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/f6f56f57960d5e6c4b44b953b28d8129/atlmr_tshirt_distressedlogo.jpg","link_url":null,"open_in_new_window":false,"tag":"image_1","alt_text":"","dominant_color":"#FFFFFF","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--eToQgNln--/c_limit,g_center,h_65535,w_1600/a_auto,fl_keep_iptc.progressive,q_95/v1/f6f56f57960d5e6c4b44b953b28d8129/atlmr_tshirt_distressedlogo.jpg","image_dimensions_1600x1200":[1600,1600],"image_crop_id":5131832,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--TuqXEw2X--/c_crop,h_2400,w_2400,x_0,y_0/c_fill,g_center,h_1140,w_1140/a_auto,fl_keep_iptc.progressive,q_95/v1/f6f56f57960d5e6c4b44b953b28d8129/atlmr_tshirt_distressedlogo.jpg","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--YucZXYMl--/c_crop,h_2400,w_2400,x_0,y_0/c_fill,g_center,h_1140,w_1140/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/f6f56f57960d5e6c4b44b953b28d8129/atlmr_tshirt_distressedlogo.jpg","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--eToQgNln--/c_limit,g_center,h_65535,w_1600/a_auto,fl_keep_iptc.progressive,q_95/v1/f6f56f57960d5e6c4b44b953b28d8129/atlmr_tshirt_distressedlogo.jpg","resource_width":2400,"actual_width":1600,"actual_height":1600,"link_type":"none","link_value":"","shape":"square","vfs_file_id":19188875,"topX":0,"topY":0,"bottomX":1600,"bottomY":1600,"width":1140,"height":1140}},"template_id":17,"unique_id":null},{"id":1761600,"category":"text","removable":true,"template_path":"stackable/public/headline_01/template","position":17,"content_page_assets":{"title_1":{"id":28547565,"type":"title","copy":"<p>t-shirt design (images not taken by me)</p>","tag":"title_1","copy_alignment":"center","wysiwyg_disallowed":false}},"template_id":6,"unique_id":null},{"id":1761457,"category":"layout","removable":true,"template_path":"stackable/public/image_12/template","position":18,"content_page_assets":{"image_1":{"id":28546026,"type":"content_page_image","image_url":"https://format-com-cld-res.cloudinary.com/image/private/s--nl5ihfi3--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg","link_url":null,"open_in_new_window":false,"tag":"image_1","alt_text":"","dominant_color":"#141211","image_url_1600x1200":"https://format-com-cld-res.cloudinary.com/image/private/s--zpVgXl7X--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg","image_dimensions_1600x1200":[612,468],"image_crop_id":5131833,"image_url_cropped":"https://format-com-cld-res.cloudinary.com/image/private/s--sd03XsP5--/c_limit,g_center,h_504,w_660/a_auto,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg","image_url_cropped_2x":"https://format-com-cld-res.cloudinary.com/image/private/s--YlhkivWt--/c_limit,g_center,h_504,w_660/a_auto,dpr_2,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg","image_url_editable":"https://format-com-cld-res.cloudinary.com/image/private/s--zpVgXl7X--/c_limit,g_center,h_1200,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg","resource_width":612,"actual_width":612,"actual_height":468,"link_type":"none","link_value":"","shape":"original","vfs_file_id":19105439,"topX":-48,"topY":-36,"bottomX":612,"bottomY":468,"width":760,"height":581},"caption_1":{"id":28546027,"type":"title","copy":"<p><br></p>","tag":"caption_1","copy_alignment":"","wysiwyg_disallowed":false}},"template_id":44,"unique_id":null}],"needs_wrap":true,"content_editable":false,"content_page_inject_css":"application/content_pages/content_page_inject.css"},"menu_items":[{"id":3113721,"type":"content","name":"home","href":"/index","open_in_new_window":true,"cover_image":null,"is_title_page":true},{"id":199238,"type":"category","name":"work","pages":[{"id":3257410,"type":"content","name":"American Culinary Federation","href":"/american-culinary-federation.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257544,"type":"content","name":"Atlanta Moon Ride","href":"/atlanta-moon-ride.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257570,"type":"content","name":"Capital Group","href":"/capital-group.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257668,"type":"content","name":"Chamber Fitness","href":"/chamber-fitness.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257737,"type":"content","name":"G_Farrell Consulting","href":"/g_farrell-consulting.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3259953,"type":"content","name":"Intermarket","href":"/intermarket.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257764,"type":"content","name":"Keefe Bruyette & Woods","href":"/keefe-bruyette-woods.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257786,"type":"content","name":"Mill Basin Kosher Delicatessen","href":"/mill-basin-kosher-delicatessen.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257258,"type":"content","name":"Terra Capital Partners","href":"/terra-capital-partners.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257858,"type":"content","name":"Pharos Hospitality","href":"/pharos-hospitality.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257873,"type":"content","name":"VER","href":"/ver.html","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3257886,"type":"content","name":"35mm Magazine","href":"/35mm-magazine.html","open_in_new_window":true,"cover_image":null,"is_title_page":false}]},{"id":199255,"type":"category","name":"photography","pages":[{"id":3066101,"type":"gallery","name":"Film","href":"/film.html","open_in_new_window":true,"cover_image":null},{"id":3066414,"type":"gallery","name":"Digital","href":"/digital.html","open_in_new_window":true,"cover_image":null}]},{"id":3065658,"type":"content","name":"about","href":"/about","open_in_new_window":true,"cover_image":null,"is_title_page":false},{"id":3065659,"type":"content","name":"contact","href":"/contact","open_in_new_window":true,"cover_image":null,"is_title_page":false}],"paths":{"root":"/","theme_stylesheet":"//cara1yn.format.com/stylesheet.css","using":"http://www.format.com/l/your_new_portfolio#sierra"},"theme":{"background_color":"#ffffff","enable_header_background":false,"header_background_color":"#fafafa","menu_alignment":"Top","logo_image":null,"logo_text":"caralyn farrell design","logo_typography":{"color":"#111111","font-family":"\"Freight Sans Light\", \"Freight Sans Light\", sans-serif","font-weight":"bold","font-size":"24"},"logo_letter_spacing":"Loose","text_typography":{"color":"#232323","font-family":"\"Freight Sans Book\", \"Freight Sans Book\", sans-serif","font-size":"12","line-height":1.5},"headline_typography":{"color":"#343434","font-family":"karla, sans-serif","font-size":24,"font-weight":"bold"},"link_typography":{"color":"#444444","font-style":"normal","font-weight":"normal","text-decoration":"underline","hover":{"color":"#999999","text-decoration":"underline"}},"post_text":"&copy; caralyn farrell 2016. all rights reserved.","post_text_typography":{"color":"#343434","font-family":"\"Benton Sans Thin\", \"Benton Sans Thin\", sans-serif","font-size":12,"font-style":"normal"},"menu_typography":{"color":"#222222","font-family":"karla, sans-serif","font-size":15,"hover":{"color":"#555555"},"selected":{"color":"#ed8374","font-weight":"bold"}},"menu_category_typography":{"font-weight":"normal"},"menu_group_background":true,"menu_group_background_color":"#fafafa","gallery_caption_typography":{"color":"#232323","font-family":"\"Freight Sans Book\", \"Freight Sans Book\", sans-serif","font-size":14},"gallery_caption_alignment":"Left","gallery_shrink_portrait_images":false,"listing_image_size":"Medium","listing_gutter_size":"Normal","listing_larger_images":true,"listing_thumbnail_overlay_color":"#ffffff","listing_caption_typography":{"color":"#343434","font-family":"\"Freight Sans Light\", \"Freight Sans Light\", sans-serif","font-size":"10","font-weight":"normal","hover":{"color":"#999999"}},"listing_caption_alignment":"Left","listing_navigation_typography":{"color":"#4d4d4d","font-family":"\"Freight Sans Light\", \"Freight Sans Light\", sans-serif","font-size":"12","hover":{"color":"#525252"}},"listing_navigation_title":true,"listing_navigation_pagination":true,"enable_nested_listing":false,"social_icons_typography":{"color":"#999999","font-size":11.7,"font-weight":"normal","hover":{"color":"#555555"}},"social_links_style":"Text","icon1":"LinkedIn","icon1text":"https://www.linkedin.com/in/cara1yn","icon2":"None","icon2text":"","icon3":"None","icon3text":"http://linkedin.com/","icon4":"None","icon4text":null,"icon5":"None","icon5text":null,"show_social_sharing":true,"blog_title_typography":{"font-family":"karla, sans-serif","color":"#343434","font-size":28,"font-weight":"bold","font-style":"normal","hover":{"text-decoration":"underline","color":"#484848"}},"blog_body_typography":{"font-family":"karla, sans-serif","color":"#343434","line-height":1.6,"font-size":16},"blog_caption_typography":{"font-family":"karla, sans-serif","font-size":14},"blog_images_slideshow_color":"Light","logo_image_thumbnails":null,"logo_image_trimmed":null},"meta":{"authorized":true,"currency_entity":null,"currency_code":null,"has_active_store":false,"form_authenticity_token":"Mysa7KzrXB2Ja1Q3w+r9tfj4ma8QTgADkTKGeNdgWC3wUkVd5P76HfdJcGSifrKdLbBps+aaI29ymxpKlHSZqw==","theme_version":29,"theme_name":"Sierra","password_submitted":false,"profession_identifier":0,"country_identifier":886,"using":{"right":20,"bottom":20},"explicit":false,"mobile":{},"meta_description":"caralyn farrell | design, branding, marketing and typography.","social_description":"caralyn farrell | design, branding, marketing and typography.","template_name":"simple","api_version":2,"fb_url":"http://www.caralynfarrell.com//atlanta-moon-ride.html","fb_image":"https://format-com-cld-res.cloudinary.com/image/private/s--nl5ihfi3--/c_limit,g_center,h_65535,w_960/a_auto,fl_keep_iptc.progressive,q_95/v1/8685cfc71c30334ac0a3ff82f5ad7972/amrtshirts.jpg","fb_image_width":612,"fb_image_height":468,"title":"caralyn farrell | design, branding, marketing - Atlanta Moon Ride"},"site":{"custom_head_content":null,"fav_icon_url":"https://format-com-cld-res.cloudinary.com/image/upload/s--FEKF_NOx--/c_limit,g_center,h_16,w_16/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.ico","hide_using_4ormat":false,"image_protection_blurb":"copyright © 2016 caralyn farrell. all rights reserved.","instagram_access_token":"47431062.ff31c92.89ad56eb695a41358f469cd7dc656757","invalidated_at":1505171321,"meta_description":"caralyn farrell | design, branding, marketing and typography.","meta_keywords":"caralyn farrell, graphic design, web design, marketing, branding, identity, web development, burnett group, designer","name":"caralyn farrell | design, branding, marketing","png_favicons":{"16":"https://format-com-cld-res.cloudinary.com/image/upload/s--c4homh0G--/c_limit,g_center,h_16,w_16/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png","32":"https://format-com-cld-res.cloudinary.com/image/upload/s--Xe9UnMMQ--/c_limit,g_center,h_32,w_32/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png","96":"https://format-com-cld-res.cloudinary.com/image/upload/s--DHTU2E4u--/c_limit,g_center,h_96,w_96/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png","192":"https://format-com-cld-res.cloudinary.com/image/upload/s--XgTi_an1--/c_limit,g_center,h_192,w_192/a_auto,fl_keep_iptc.progressive,q_95/432819-19078636-mylogo1.png"},"protect_images":true,"system_google_analytics_key":"UA-11743039-2","url":"http://www.caralynfarrell.com","user_google_analytics_key":null}};
   //]]>
 </script>
 
