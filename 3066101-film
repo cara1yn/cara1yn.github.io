@@ -208,7 +208,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         
         
                 <li class="item">
-                    <a href="index" >home</a>
+                    <a href="index.html" >home</a>
                 </li>
         
         
@@ -316,13 +316,13 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         
         
                 <li class="item">
-                    <a href="3065658" >about</a>
+                    <a href="about.html" >about</a>
                 </li>
         
         
         
                 <li class="item">
-                    <a href="3065659" >contact</a>
+                    <a href="contact.html" >contact</a>
                 </li>
         
         
@@ -346,7 +346,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
             
             
                     <li class="item">
-                        <a href="index">home</a>
+                        <a href="index.html">home</a>
                     </li>
             
             
@@ -454,13 +454,13 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
             
             
                     <li class="item">
-                        <a href="3065658">about</a>
+                        <a href="about.html">about</a>
                     </li>
             
             
             
                     <li class="item">
-                        <a href="3065659">contact</a>
+                        <a href="contact.html">contact</a>
                     </li>
             
             
