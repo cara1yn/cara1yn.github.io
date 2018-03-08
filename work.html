@@ -9,24 +9,110 @@
 		<link type="text/css" rel="images" href="images"  media="screen,projection"/>
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--Import photo gallery-->
+		<link rel="stylesheet" href="css/jquery.justified.css">
 	</head>
 	<body>
 		<div id="header-row" class="row">
 			<div class="col s10"> caralyn farrell</div>
-			<div class="col s1 pull-s1">work</div>
-			<div class="col s1 pull-s1">about</div>
+			<div class="col s1 pull-s1"><a href="index.html">about</a></div>
+			<div class="col s1 pull-s1"><span class="yellow accent-2">work</span></div>
 			
 		</div>
-		<div class="content">
+		<div class="">
 			<div class="row">
-				<div class="col s10 m6 l4 xl3"> <img src="cap01.png">
+				<div class="col s11">
+					<div class="image-container"/>
+				</div>
+
 				<br>
 				<br>
-				<div id="email"><a href="mailto:caralyn.farrell@gmail.com" target="_blank">caralyn.farrell@gmail.com</a></div>
-			</div>
 		</div>
 		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/jquery.justified.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				photos = [
+				  	  {
+				  	  	url: "images/mmw-site.png",
+				  	  	width: 517,
+				  	  	height: 593,
+				  	  },
+				  	   {
+				  	  	url: "images/cap01.png",
+				  	  	width: 869,
+				  	  	height: 561,
+				  	  },
+				  	   {
+				  	  	url: "images/t6wd-mockup01.jpg",
+				  	  	width: 869,
+				  	  	height: 561,
+				  	  },
+				  	   {
+				  	  	url: "images/rsv-ice.jpg",
+				  	  	width: 2550,
+				  	  	height: 3300,
+				  	  },
+				  	   {
+				  	  	url: "images/mockupdad.jpg",
+				  	  	width: 869,
+				  	  	height: 561,
+				  	  },
+
+				  	  	{
+				  	  	url: "images/ANA-SiteComp-v03.jpg",
+				  	  	width: 868,
+				  	  	height: 1223,
+				  	  },
+
+				  	  	{
+				  	  	url: "images/terrabrochure-detail.png",
+				  	  	width: 869,
+				  	  	height: 561,
+				  	  },
+
+				  	  	{
+				  	  	url: "images/35mm 3 cover.png",
+				  	  	width: 869,
+				  	  	height: 561,
+				  	  },
+
+				  	   	{
+				  	  	url: "images/chambermockup.jpg",
+				  	  	width: 2048,
+				  	  	height: 1280,
+				  	  },
+
+				  	    {
+				  	  	url: "images/t6-screenshot.png",
+				  	  	width: 833,
+				  	  	height: 622,
+				  	  },
+
+				  	    {
+				  	  	url: "images/terra email template mockup02.jpg",
+				  	  	width: 1130,
+				  	  	height: 800,
+				  	  },
+
+				  	  ]
+				$('.image-container').empty().justifiedImages({
+				  	  images : photos,
+				   	 rowHeight: 200,
+				  	  maxRowHeight: 400,
+				   	 thumbnailPath: function(photo, width, height){
+				   	 	return photo.url
+				    },
+				    getSize: function(photo){
+				        return {width: photo.width, height: photo.height};
+				    },
+				    margin: 1
+				});
+			})
+					
+</script>
 	</body>
 </html>
