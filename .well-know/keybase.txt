@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/cara1yn
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://caralynfarrell.com
+  * I am cara1yn (https://keybase.io/cara1yn) on keybase.
+  * I have a public key ASDEtzB4PXC8vMCiK7FB5asZD-Pe8R0-qJP3ZkY7gn1PkQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c4b730783d70bcbcc0a22bb141e5ab190fe3def11d3ea893f766463b827d4f910a",
+      "host": "keybase.io",
+      "kid": "0120c4b730783d70bcbcc0a22bb141e5ab190fe3def11d3ea893f766463b827d4f910a",
+      "uid": "882d1bebed6e8e313bd7901588d1cd19",
+      "username": "cara1yn"
+    },
+    "merkle_root": {
+      "ctime": 1529758791,
+      "hash": "617be66c1cc0566cd00a4fba566a3f65d85355f31a4a5133a95e1eb9a74319bd978b7ed873d25651037916f420c1ca47c5ec7ff0fbcd298a2200b87df95a2563",
+      "hash_meta": "04cc65bf97f513f207c5fbd7e19a058eb0d7d0d9782f62ae1fd34fc7b9bd5b4c",
+      "seqno": 3130715
+    },
+    "service": {
+      "entropy": "/w5T2iSQOkoYDXd0y+q8rChv",
+      "hostname": "caralynfarrell.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.1.1"
+  },
+  "ctime": 1529758870,
+  "expire_in": 504576000,
+  "prev": "b662a2deb11833f24124db25d7fc17c9cab0baae600c76d0fd3ff3cd82583cae",
+  "seqno": 27,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgxLcweD1wvLzAoiuxQeWrGQ/j3vEdPqiT92ZGO4J9T5EKp3BheWxvYWTESpcCG8QgtmKi3rEYM/JBJNsl1/wXycqwuq5gDHbQ/T/zzYJYPK7EIKb/8OWDriNFX+sFqBiQ4yerco8BfwgBfilJDG1Ck6kHAgHCo3NpZ8RABBawKAepSKpAFOkdVxUgRM0nWePWG7SV/H5QBtLmjldMh3+F/huDhlHsfV06hAlLfgXmb+HafGPnAOgy89O/C6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFH5W/xvkW9yKSvxny1T8Qp960rKuxn1lL6gDcIqRVg6o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cara1yn
+
+==================================================================
