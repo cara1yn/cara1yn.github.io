@@ -61,7 +61,7 @@ body { font-family: sans-serif; }
 
 .card {
   width: 75%;
-  height: 200px;
+  height: 75%;
 }
 
 #scrolling-wrapper, #scrolling-wrapper-flexbox {
