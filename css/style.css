@@ -38,7 +38,7 @@ body { font-family: sans-serif; }
 
 /* for horizontal gallery */
 
-.scrolling-wrapper {
+#scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -48,7 +48,7 @@ body { font-family: sans-serif; }
   }
 }
 
-.scrolling-wrapper-flexbox {
+#scrolling-wrapper-flexbox {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -64,7 +64,7 @@ body { font-family: sans-serif; }
   height: 100%;
 }
 
-.scrolling-wrapper, .scrolling-wrapper-flexbox {
+#scrolling-wrapper, #scrolling-wrapper-flexbox {
   height: 75px;
   width: 100%;
   -webkit-overflow-scrolling: touch;
