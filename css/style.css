@@ -64,26 +64,3 @@ body { font-family: sans-serif; }
   display: block;
   width: 100%;
 }
-
-
-
-.card {
-  display: flex;
-  min-width: 90%;
-  min-height: 200px;
-  overflow-x: auto;
-}
-
-.card::-webkit-scrollbar {
-  display: none;
-}
-.card--content {
-  min-width: 300px;
-  margin: 5px;
-  box-shadow: 3px 5px rgba(255,255,255,0.05);
-}
-
-.card--content img {
-  width: 75%;
-  height: 75%;
-}
