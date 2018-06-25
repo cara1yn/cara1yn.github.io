@@ -65,7 +65,7 @@ body { font-family: sans-serif; }
 }
 
 .scrolling-wrapper, .scrolling-wrapper-flexbox {
-  height: 200px;
+  height: 600px;
   width: 100%;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
