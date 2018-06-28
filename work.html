@@ -148,9 +148,16 @@
 				        return {width: photo.width, height: photo.height};
 				    },
 				    template: function(photo) {
-		                return '<div class="photo-container" style="height:' + photo.displayHeight + 'px;margin-right:' + photo.marginRight + 'px;">' + 
-		                	'<a href="' + photo.projectLink + '">' + '<img class="image-thumb" src="' + photo.src + '" style="width:' + photo.displayWidth + 'px;height:' + photo.displayHeight + 'px;" ></a>' +
-		                    '</div>';
+				    	tpl = '<div class="photo-container" style="height:' + photo.displayHeight + 'px;margin-right:' + photo.marginRight + 'px;">' 
+				    	if (photo.projectLink) {
+				    		tpl += '<a href="' + photo.projectLink + '">' 
+				    	}
+		                tpl += '<img class="image-thumb" src="' + photo.src + '" style="width:' + photo.displayWidth + 'px;height:' + photo.displayHeight + 'px;" >'
+		                if (photo.projectLink) { 
+		                	tpl += '</a>'
+		                }
+		                tpl += '</div>'
+		                return tpl
 		            },
 				    margin: 1
 				});
