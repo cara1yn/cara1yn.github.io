@@ -51,6 +51,8 @@
 				  	  	url: "images/mmw-poster.jpg",
 				  	  	width: 2300,
 				  	  	height: 2200,
+				  	  	projectLink: "/project-pages/mmw.html",
+
 				  	  },
 						{
 				  	  	url: "images/ANA_Browser.jpg",
@@ -77,6 +79,8 @@
 				  	  	url: "images/rsv-ice-detail.jpg",
 				  	  	width: 1433,
 				  	  	height: 1875,
+				  	  	projectLink: "/project-pages/rsv.html",
+
 				  	  },
 				  	   {
 				  	  	url: "images/mockupdad.jpg",
@@ -94,6 +98,8 @@
 				  	  	url: "images/sb-site.jpg",
 				  	  	width: 800,
 				  	  	height: 600,
+				  	  	projectLink: "/project-pages/shareblue.html",
+
 				  	  },
 
 				  	    {
@@ -106,12 +112,16 @@
 				  	  	url: "images/spritz-poster.png",
 				  	  	width: 4288,
 				  	  	height: 2848,
+				  	  	projectLink: "/project-pages/spritz.html",
+
 				  	  },
 
 				  	  	{
 				  	  	url: "images/35mm 3 cover.png",
 				  	  	width: 869,
 				  	  	height: 561,
+				  	  	projectLink: "/project-pages/35mm.html",
+
 				  	  },
 
 				  	    {
@@ -128,15 +138,20 @@
 
 				  	  ]
 				$('.image-container').empty().justifiedImages({
-				  	  images : photos,
-				   	 rowHeight: 200,
-				  	  maxRowHeight: 400,
-				   	 thumbnailPath: function(photo, width, height){
+					images : photos,
+				   	rowHeight: 200,
+				  	maxRowHeight: 400,
+				   	thumbnailPath: function(photo, width, height){
 				   	 	return photo.url
 				    },
 				    getSize: function(photo){
 				        return {width: photo.width, height: photo.height};
 				    },
+				    template: function(photo) {
+		                return '<div class="photo-container" style="height:' + photo.displayHeight + 'px;margin-right:' + photo.marginRight + 'px;">' + 
+		                	'<a href="' + photo.projectLink + '">' + '<img class="image-thumb" src="' + photo.src + '" style="width:' + photo.displayWidth + 'px;height:' + photo.displayHeight + 'px;" ></a>' +
+		                    '</div>';
+		            },
 				    margin: 1
 				});
 			})

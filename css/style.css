@@ -62,10 +62,14 @@ body { font-family: sans-serif; }
 .card {
   width: 80%;
   height: 80%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+
 }
 
 .card img {
-  max-width: 28vw;  
+  max-width: 28vw; 
+  max-height: 75vh; 
 }
 
 .scrolling-wrapper, .scrolling-wrapper-flexbox {
