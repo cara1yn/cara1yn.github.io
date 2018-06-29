@@ -80,3 +80,14 @@ body { font-family: sans-serif; }
     display: none;
   }
 }
+
+.scrolling-wrapper-flexbox-02 {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  
+  .card {
+    flex: 0 0 auto;
+    margin-right: 3px;
+  }
+}
