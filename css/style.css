@@ -72,7 +72,7 @@ body { font-family: sans-serif; }
   max-height: 75vh; 
 }
 
-.scrolling-wrapper, .scrolling-wrapper-flexbox {
+.scrolling-wrapper, .scrolling-wrapper-flexbox, .scrolling-wrapper-flexbox-02 {
   height: 600px;
   width: 90%;
   -webkit-overflow-scrolling: touch;
