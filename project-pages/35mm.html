@@ -10,6 +10,8 @@
 		<link type="text/css" rel="stylesheet" href="/css/style.css"  media="screen,projection"/>
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- 1. Link to jQuery (1.8 or later), -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</head>
 <body>
 		<div id="header-row" class="row">
@@ -29,26 +31,25 @@
 
 					<h1 class="projectcopy">35mm Magazine</h1><br>	
 
-						<div class="scrolling-wrapper-flexbox-02">
 
-								<div class="card">
-					  			<iframe style="width:550px; height:600px;" src="//e.issuu.com/embed.html#11122303/7658208" frameborder="0" allowfullscreen></iframe>
-								</div>
+<!-- fotorama.css & fotorama.js. -->
+		<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
-					  			<div class="card"><img src="/images/35MM2.png"></div>
-
-								<div class="card"><img src="/images/35mmcov.jpg"></div>
-
-								<div class="card"><img src="/images/2cov.jpg"></div>
-
+						<div class="fotorama">
+  						<img src="/images/35MM2.png">
+  						<img src="/images/35mmcov.jpg">
+  						<img src="/images/2cov.jpg">
 						</div>
+
 				</div>
 			</div>
+
 
 			<div class="row" class="center-align">
 
 						<h3 class="projectcopy"> Overview </h3>
-							<class="projectcopy">Creating a magazine showcasing 35mm film photographs. Featured as an Editor's Pick on Issuu.</class><br><br>
+							<class="projectcopy">Creating a <span class="cyan accent-1"><a href="//e.issuu.com/embed.html#11122303/7658208">magazine showcasing 35mm film photographs.</a></span> Featured as an Editor's Pick on Issuu.</class><br><br>
 
 						<h4 class="projectcopy"> Challenge </h4>
 							<class="projectcopy">Student project. I challenged myself to find a way of blending old and new work cohesively in a single project. I wanted to preserve these photos and save them from a life of unseen scans on unused harddrives so I included them in the work.</class>
