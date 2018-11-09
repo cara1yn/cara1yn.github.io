@@ -10,6 +10,9 @@
 		<link type="text/css" rel="stylesheet" href="/css/style.css"  media="screen,projection"/>
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- 1. Link to jQuery (1.8 or later), -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
 	</head>
 		<body>
 		<div id="header-row" class="row">
@@ -25,19 +28,20 @@
 
 			<div class="row">
 
-				<div class="col s12 m12 l12" class="center-align">
+				<div class="col s12 m12 l12">
 
 					<h1 class="projectcopy">DSA</h1><br>
+						
+						<!-- fotorama.css & fotorama.js. -->
+						<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+						<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
-						<div class="center">
-							
-							<div class="col s12" class="scrolling-wrapper-flexbox-02">
-
-						<div class="card">
-					  		<img src="/images/DSA.jpg">
+						<div class="fotorama">
+  						<img src="/images/DSA.jpg">
 						</div>
-					</div>
+
 				</div>
+			</div>
 
 						</div>
 
