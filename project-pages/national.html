@@ -10,6 +10,8 @@
 		<link type="text/css" rel="stylesheet" href="/css/style.css"  media="screen,projection"/>
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- 1. Link to jQuery (1.8 or later), -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	</head>
 <body>
 		<div id="header-row" class="row">
@@ -20,28 +22,37 @@
 		</div>
 
 		<div class="content">
+
 			<div class="row">
-				<div class="col s2">
-				<h1>The National</h1><br>
-					<br>
-					<strong>year:</strong> 2017<br>
-					<strong>work:</strong> unofficial poster design
-				</div>
 
-				<div class="col s9 offset-s1">
-					<div class="scrolling-wrapper-flexbox-02">
+				<div class="col s12 m12 l12">
 
-					  	<div class="card">
-					  		<img src="/images/natl-post.jpg">
+					<h1 class="projectcopy">"Sleep Well Beast" Poster Design</h1><br>	
+
+
+					<!-- fotorama.css & fotorama.js. -->
+					<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+					<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+						<div class="fotorama">
+  						<img src="/images/natl-post.jpg">
+  						<img src="/images/Natl2.jpg">
 						</div>
 
-						<div class="card">
-					  		<img src="/images/Natl2.jpg">
-						</div>
-
-					</div>
 				</div>
 			</div>
+
+			<div class="row">
+						<h3 class="projectcopy"> Overview </h3>
+							<div class="center-align">Unofficial poster design for the National.</class><br>
+
+						<h4 class="projectcopy"> Tools</h4>
+							<div class="center-align">Photoshop, Illustrator</class>
+
+						<h4 class="projectcopy"> Year</h4>
+							<div class="center-align">2017</class>
+
 		</div>
+
 	</body>
 </html>
