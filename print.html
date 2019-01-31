@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>caralyn farrell | designer</title>
+		<link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+		<link type="text/css" rel="images" href="images"  media="screen,projection"/>
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--Import photo gallery-->
+		<link rel="stylesheet" href="css/jquery.justified.css">
+	</head>
+	<body>
+		<div id="header-row" class="row">
+			<div class="col s6 m8 l10"><a href="index.html">caralyn farrell</div>
+			<div class="col s3 m2 l1 pull-s1"><span class="yellow accent-2">work</span></div>
+			<div class="col s3 m2 l1 pull-s1"><a href="mixed-media.html">mixed media</a></div>
+			
+		</div>
+		<div class="">
+			<div class="row">
+				<div class="col s11">
+					<div class="image-container"/>
+				</div>
+
+				<br>
+				<br>
+		</div>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/jquery.justified.min.js"></script>
+
+
+
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				photos = [
+
+
+					{
+				  	  	url: "images/RNY-Mockup01.jpg",
+				  	  	width: 3500,
+				  	  	height: 2500,
+				  	  	projectLink: "/project-pages/roust.html",
+
+				  	  },
+
+
+					{
+				  	  	url: "images/DSA.jpg",
+				  	  	width: 2359,
+				  	  	height: 1887,
+				  	  	projectLink: "/project-pages/DSA.html",
+
+				  	  },
+
+
+				  	  {
+				  	  	url: "images/SB-02.jpg",
+				  	  	width: 3219,
+				  	  	height: 3670,
+				  	  	projectLink: "/project-pages/shareblue.html",
+				  	  },
+
+
+				  	  {
+				  	  	url: "images/xmas.jpg",
+				  	  	width: 3716,
+				  	  	height: 2682,
+				  	  	projectLink: "/project-pages/happy-holidaze.html",
+				  	  },
+
+				  	  {
+				  	  	url: "images/profbit.png",
+				  	  	width: 1200,
+				  	  	height: 630,
+				  	  	projectLink: "/project-pages/profbit.html",
+
+				  	  },
+
+				  	  {
+				  	  	url: "images/mmw.png",
+				  	  	width: 2171,
+				  	  	height: 1696,
+				  	  	projectLink: "/project-pages/mmw.html",
+						},
+
+
+				  	   {
+				  	  	url: "images/cap01.png",
+				  	  	width: 869,
+				  	  	height: 561,
+				  	  	projectLink: "/project-pages/bfa.html",
+				  	  },
+
+
+				  	  {
+				  	  	url: "images/t6-site.png",
+				  	  	width: 988,
+				  	  	height: 619,
+				  	  	projectLink: "/project-pages/tcp.html",
+						},
+
+
+				  	  {
+				  	  	url: "images/rsv-ice-detail.jpg",
+				  	  	width: 1433,
+				  	  	height: 1875,
+				  	  	projectLink: "/project-pages/rsv.html",
+				  	  },
+
+				  	  {
+				  	  	url: "images/tatil-02.jpg",
+				  	  	width: 7500,
+				  	  	height: 1875,
+				  	  	projectLink: "/project-pages/tatil.html",
+
+				  	  },
+
+
+				  	   {
+				  	  	url: "images/mockupdad.jpg",
+				  	  	width: 869,
+				  	  	height: 561,
+				  	  	projectLink: "/project-pages/gjf.html",
+				  	  },
+
+
+				  	  {
+				  	  	url: "images/kamehameha.png",
+				  	  	width: 1200,
+				  	  	height: 1200,
+				  	  	projectLink: "/project-pages/kamehameha.html",
+
+				  	  },
+
+				  	 	{
+				  	  	url: "images/spritz-poster.png",
+				  	  	width: 4288,
+				  	  	height: 2848,
+				  	  	projectLink: "/project-pages/spritz.html",
+
+				  	  },
+
+				  	  	{
+				  	  	url: "images/35mmcov.jpg",
+				  	  	width: 3273,
+				  	  	height: 2618,
+				  	  	projectLink: "/project-pages/35mm.html",
+
+				  	  },
+
+				  	 	{
+				  	  	url: "images/atlmr.jpg",
+				  	  	width: 1739,
+				  	  	height: 2200,
+				  	  	projectLink: "/project-pages/atlmr.html",
+						},
+
+						{
+				  	  	url: "images/natl-post.jpg",
+				  	  	width: 2000,
+				  	  	height: 2000,
+				  	  	projectLink: "/project-pages/national.html",
+
+				  	  },
+
+
+				  	  ]
+				$('.image-container').empty().justifiedImages({
+					images : photos,
+				   	rowHeight: 200,
+				  	maxRowHeight: 400,
+				   	thumbnailPath: function(photo, width, height){
+				   	 	return photo.url
+				    },
+				    getSize: function(photo){
+				        return {width: photo.width, height: photo.height};
+				    },
+				    template: function(photo) {
+				    	tpl = '<div class="photo-container" style="height:' + photo.displayHeight + 'px;margin-right:' + photo.marginRight + 'px;">' 
+				    	if (photo.projectLink) {
+				    		tpl += '<a href="' + photo.projectLink + '">' 
+				    	}
+		                tpl += '<img class="image-thumb" src="' + photo.src + '" style="width:' + photo.displayWidth + 'px;height:' + photo.displayHeight + 'px;" >'
+		                if (photo.projectLink) { 
+		                	tpl += '</a>'
+		                }
+		                tpl += '</div>'
+		                return tpl
+		            },
+				    margin: 1
+				});
+			})
+					
+</script>
+	</body>
+</html>
