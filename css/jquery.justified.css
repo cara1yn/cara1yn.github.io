@@ -2,7 +2,7 @@
     position: relative;
 }
 .photo-container{
-    float: left;
+    float: center;
     position: relative;
     overflow: hidden;
 }
