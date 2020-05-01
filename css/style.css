@@ -62,3 +62,7 @@ body { font-family: sans-serif; }
 .fotorama__wrap {
     margin: 0 auto;
 }
+
+.projectcopy {
+text-align: center;
+}
